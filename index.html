@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="./image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="body-blue-theme">
+  <header class="header-blue">
+    <h1>calc</h1>
+    <p>THEME</p>
+    <div id="theme-switcher-container">
+      <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+      </div>
+      <input class="toggle-blue" type="range" min="1" max="3" id="theme-selector">
+    </div>
+  </header>
+
+  <section class="section-blue">
+    <h1 id="output"></h1>
+  </section>
+
+  <main class="main-blue">
+    <ul id="numpad-container">
+      <li class="key key-blue" data-number="number" id="seven">7</li>
+      <li class="key key-blue" data-number="number" id="eight">8</li>
+      <li class="key key-blue" data-number="number" id="nine">9</li>
+      <li class="key special-key-blue" id="delete">DEL</li>
+      <li class="key key-blue" data-number="number" id="four">4</li>
+      <li class="key key-blue" data-number="number" id="five">5</li>
+      <li class="key key-blue" data-number="number" id="six">6</li>
+      <li class="key key-blue" data-operator="operator" id="plus">+</li>
+      <li class="key key-blue" data-number="number" id="one">1</li>
+      <li class="key key-blue" data-number="number" id="two">2</li>
+      <li class="key key-blue" data-number="number" id="three">3</li>
+      <li class="key key-blue" data-operator="operator" id="minus">-</li>
+      <li class="key key-blue" data-number="number" id="comma">.</li>
+      <li class="key key-blue" data-number="number" id="zero">0</li>
+      <li class="key key-blue" data-operator="operator" id="divide">/</li>
+      <li class="key key-blue" data-operator="operator" id="times">x</li>
+      <li class="big-key special-key-blue" id="reset">RESET</li>
+      <li class="big-key equal-key-blue" id="equals">=</li>
+    </ul>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/vikiorf">vikiorf</a>.
+  </div>
+</body>
+</html>
